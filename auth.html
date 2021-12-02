@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOS Telegram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tg">
+            <div class="tg__auth">
+                <div class="bars">
+                    <p class="time__style"></p>
+                    <div class="bars__left">
+                        <img src="img/Mobile Signal.svg" alt="Mobile signal" class="bars__signal">
+                        <img src="img/Wifi.svg" alt="Wifi" class="bars__wifi">
+                        <img src="img/Battery.svg" alt="Battery" class="bars__battery">
+                    </div>
+                </div>
+                <div class="main__content">
+                    <nav class="nav">
+                        <a href="" class="cancel__btn btn">Cancel</a>
+                        <a href="chats.html" class="next__btn btn">Next</a>
+                    </nav>
+                    <div class="auth__info">
+                        <h1 class="auth__info-title">Your Phone</h1>
+                        <p class="auth__info-subtitle">Please confirm your country code and enter your phone number.</p>
+                    </div>
+                    <select class="separator" id="country" onchange="country_code()">
+                        <option value="uz">UZBEKISTAN</option>
+                        <option value="us">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="br">BRASIL</option>
+                        <option value="ru">RUSSIAN</option>
+                    </select>
+                    <div class="input__number">
+                        <input class="input__number_tel-code" type="tel" id="output">
+                        <input class="input__number_tel-num" type="text" placeholder="Your phone number">
+                    </div>
+                    <div class="sync__contacts">
+                        <p class="sync__title">Sync Contacts</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+                    </div>
+                    <div class="keyboard__numberic">
+                        <div class="keys__btn">
+                            <div class="keys one">1</div>
+                            <div class="keys two">2</div>
+                            <div class="keys three">3</div>
+                            <div class="keys four">4</div>
+                            <div class="keys five">5</div>
+                            <div class="keys six">6</div>
+                            <div class="keys seven">7</div>
+                            <div class="keys eight">8</div>
+                            <div class="keys nine">9</div>
+                            <div class="keys op"></div>
+                            <div class="keys zero">0</div>
+                            <img src="img/Delete.svg" alt="Del" class="del__key">
+                        </div>
+                    </div>
+                    <div class="home__indi">
+                        <img src="img/Line.svg" alt="back home" class="home__indi-img">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
